@@ -10,7 +10,8 @@
   align-items: center;
   gap: 0.75em;
   border: 1.5px solid transparent;
+
+  svg {
+    scale: 1.2;
+  }
 }
-.Button svg {
-  scale: 1.2;
-}/*# sourceMappingURL=Components.css.map */
