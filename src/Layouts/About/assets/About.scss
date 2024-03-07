@@ -1,0 +1,13 @@
+.about {
+  padding-block: 2rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 6rem;
+
+  .link-cards-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    align-self: flex-start;
+  }
+}

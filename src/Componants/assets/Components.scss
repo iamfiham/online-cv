@@ -1,17 +1,63 @@
+$balck-90: rgba(0, 0, 0, 0.9);
+
+// button component
+
 .Button {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: $balck-90;
   padding: 0.75em 1em;
   border-radius: 8px;
   color: var(--white-90);
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 600;
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 0.75em;
   border: 1.5px solid transparent;
+  transition: all 0.25s ease;
+
+  &:hover {
+    background-color: rgb(60, 60, 60);
+  }
 
   svg {
     scale: 1.2;
+    transition: all 0.25s ease;
+  }
+}
+
+// link card component
+
+.link-card {
+  padding: 1rem;
+
+  h5 {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--text-gray);
+    line-height: 1.5;
+  }
+  h3 {
+    font-size: 0.9375rem;
+    color: $balck-90;
+    font-weight: 700;
+    margin-top: 0.5em;
+    color: $balck-90;
+  }
+}
+
+// about heading and paragraph component
+
+.about-text {
+  @extend .link-card;
+  padding: 1rem 0rem;
+
+  h3 {
+    font-size: 1.25rem;
+    margin-top: 0rem;
+  }
+  h5 {
+    margin: 2em 0em 1em;
+    font-size: 0.9375rem;
   }
 }

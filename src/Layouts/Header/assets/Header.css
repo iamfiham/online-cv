@@ -1,19 +1,15 @@
 .header {
-  padding-block: 2rem;
+  padding-block: 3rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.cover-image {
-  background-color: yellow;
-  height: 150px;
-}
-.title-div {
+.header .title-div {
   display: flex;
   justify-content: space-between;
   align-items: start;
   position: relative;
   margin-bottom: 5rem;
 }
-.profile-photo {
+.header .title-div .profile-photo {
   width: 150px;
   height: 150px;
   background-color: aliceblue;
@@ -21,35 +17,28 @@
   transform: translateY(-50%);
   position: absolute;
 }
-.username {
+.header .title-div .username {
   margin: 0rem auto 0rem 10.875rem;
 }
-.username h1 {
+.header .title-div .username h1 {
   font-size: 1.456rem;
   font-weight: 700;
   line-height: 1;
 }
-.username p {
-  font-weight: 400;
-  font-size: 0.9rem;
-  margin-top: 0.75em;
-  line-height: 1;
-  color: var(--text-gray);
-}
-.sub-title {
-  color: black;
-  font-weight: 700;
-  font-size: 1.15rem;
-}
-.para {
-  color: var(--text-gray);
-  font-weight: 400;
-  font-size: 0.9rem;
-  margin-top: 0.75em;
-  line-height: 1;
-}
-.buttons-div {
+.header .title-div .buttons-div {
   display: flex;
   align-items: center;
   gap: 0.8rem;
 }
+.header .sub-title {
+  color: black;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+.header .para, .header .title-div .username p {
+  color: var(--text-gray);
+  font-weight: 400;
+  font-size: 0.9375rem;
+  margin-top: 0.75em;
+  line-height: 1;
+}/*# sourceMappingURL=Header.css.map */
