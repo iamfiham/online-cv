@@ -1,9 +1,12 @@
 import "./assets/Components.css";
-function LinkCard() {
+
+function LinkCard({ children, tag, onClick }) {
   return (
     <div className="link-card">
-      <h5>Portfolio</h5>
-      <h3>@iamfiham.github.io</h3>
+      <h5>{tag}</h5>
+      <a href={onClick} target="_blank">
+        <h3>{children}</h3>
+      </a>
     </div>
   );
 }

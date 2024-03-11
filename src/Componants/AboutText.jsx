@@ -6,9 +6,9 @@ function AboutText() {
       <h3>About me</h3>
       <div className="notes">
         <p>
-          I'm a Frontend Developer based in Melbourne, Australia, specializing in React and Next.js. I have a passion
-          for crafting exceptional user experiences and interfaces using the latest frontend technologies.My expertise
-          lies in building responsive and dynamic web applications that elevate user engagement and satisfaction.
+          I'm a Frontend Developer based in Srilanka, specializing in React and Next.js. I have a passion for crafting
+          exceptional user experiences and interfaces using the latest frontend technologies.My expertise lies in
+          building responsive and dynamic web applications that elevate user engagement and satisfaction.
         </p>
         <p>
           I thrive on tackling complex challenges and turning ideas into polished digital experiences. With a strong

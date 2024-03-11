@@ -5,6 +5,12 @@ import { TbMessageCircle2 } from "react-icons/tb";
 import Pic from "../../assets/profile.webp";
 
 function Header() {
+  const redirectToEmail = () => {
+    const myEmail = "xyzfiham@gmail.com";
+    const mailtoUrl = `mailto:${myEmail}`;
+    window.location.href = mailtoUrl;
+  };
+
   return (
     <div className="header">
       <div className="title-div">
@@ -22,15 +28,7 @@ function Header() {
               border: "1.5px solid rgba(0, 0, 0, 0.25)",
               color: " rgba(0, 0, 0, 0.9)",
             }}
-          >
-            •••
-          </Button>
-          <Button
-            style={{
-              backgroundColor: "transparent",
-              border: "1.5px solid rgba(0, 0, 0, 0.25)",
-              color: " rgba(0, 0, 0, 0.9)",
-            }}
+            onClick={redirectToEmail}
           >
             <IoMailOpenOutline style={{ stroke: " rgba(0, 0, 0, 0.9)" }} />
             Email
