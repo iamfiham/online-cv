@@ -1,5 +1,5 @@
 import ProjectCard from "../../Componants/ProjectCard";
-import "./assets/Works.css";
+import "./assets/Works.scss";
 
 function Works() {
   return (

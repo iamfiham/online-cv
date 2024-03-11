@@ -1,6 +1,6 @@
 import AboutText from "../../Componants/AboutText";
 import LinkCard from "../../Componants/LinkCard";
-import "./assets/About.css";
+import "./assets/About.scss";
 import { FiArrowUpRight } from "react-icons/fi";
 
 function About() {

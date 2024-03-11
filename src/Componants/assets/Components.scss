@@ -95,9 +95,9 @@ $black-90: rgba(0, 0, 0, 0.9);
     }
   }
 }
+
+// project card css
 .project-card {
   background-color: rgba(0, 0, 0, 0.1);
-  height: 300px;
-  h3 {
-  }
+  aspect-ratio: 4/5;
 }

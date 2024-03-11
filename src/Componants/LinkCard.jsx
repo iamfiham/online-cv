@@ -1,4 +1,4 @@
-import "./assets/Components.css";
+import "./assets/Components.scss";
 
 function LinkCard({ children, tag, onClick }) {
   return (

@@ -1,8 +1,8 @@
-import "./assets/Header.css";
+import "./assets/Header.scss";
 import Button from "../../Componants/Button";
 import { IoMailOpenOutline } from "react-icons/io5";
 import { TbMessageCircle2 } from "react-icons/tb";
-import Pic from "../../assets/profile.webp";
+import Pic from "../../assets/profile.png";
 
 function Header() {
   const redirectToEmail = () => {
@@ -13,6 +13,10 @@ function Header() {
 
   return (
     <div className="header">
+      <div className="hamburger-icon">
+        <div></div>
+        <div></div>
+      </div>
       <div className="title-div">
         <div className="profile-photo">
           <img src={Pic} alt="profile" />
