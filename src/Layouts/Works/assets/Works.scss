@@ -1,0 +1,15 @@
+$black-90: rgba(0, 0, 0, 0.9);
+
+.works {
+  h3 {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    color: $black-90;
+  }
+  .project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1.5rem;
+  }
+}

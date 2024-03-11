@@ -20,21 +20,20 @@
   transition: all 0.25s ease;
 }
 
-.link-card, .about-text {
+.link-card {
   padding: 1rem;
 }
-.link-card h5, .about-text h5 {
+.link-card h5 {
   font-size: 0.85rem;
   font-weight: 400;
   color: var(--text-gray);
   line-height: 1.5;
 }
-.link-card h3, .about-text h3 {
+.link-card h3 {
   font-size: 0.9375rem;
   color: rgba(0, 0, 0, 0.9);
   font-weight: 700;
   margin-top: 0.5em;
-  color: rgba(0, 0, 0, 0.9);
 }
 
 .about-text {
@@ -43,8 +42,21 @@
 .about-text h3 {
   font-size: 1.25rem;
   margin-top: 0rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.9);
 }
-.about-text h5 {
-  margin: 2em 0em 1em;
+.about-text .notes {
+  margin: 2rem 0em 1rem;
+}
+.about-text .notes p {
   font-size: 0.9375rem;
+  font-weight: 400;
+  color: var(--text-gray);
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+.project-card {
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 300px;
 }/*# sourceMappingURL=Components.css.map */

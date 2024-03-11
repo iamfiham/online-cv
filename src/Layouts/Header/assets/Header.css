@@ -15,7 +15,17 @@
   background-color: aliceblue;
   border-radius: 50%;
   transform: translateY(-50%);
+  border: 4px solid white;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
   position: absolute;
+  overflow: hidden;
+}
+.header .title-div .profile-photo img {
+  width: 100%;
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .header .title-div .username {
   margin: 0rem auto 0rem 10.875rem;

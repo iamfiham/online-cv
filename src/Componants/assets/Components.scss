@@ -1,9 +1,9 @@
-$balck-90: rgba(0, 0, 0, 0.9);
+$black-90: rgba(0, 0, 0, 0.9);
 
 // button component
 
 .Button {
-  background-color: $balck-90;
+  background-color: $black-90;
   padding: 0.75em 1em;
   border-radius: 8px;
   color: var(--white-90);
@@ -39,25 +39,38 @@ $balck-90: rgba(0, 0, 0, 0.9);
   }
   h3 {
     font-size: 0.9375rem;
-    color: $balck-90;
+    color: $black-90;
     font-weight: 700;
     margin-top: 0.5em;
-    color: $balck-90;
   }
 }
 
 // about heading and paragraph component
 
 .about-text {
-  @extend .link-card;
   padding: 1rem 0rem;
 
   h3 {
     font-size: 1.25rem;
     margin-top: 0rem;
+    font-weight: 700;
+    color: $black-90;
   }
-  h5 {
-    margin: 2em 0em 1em;
-    font-size: 0.9375rem;
+  .notes {
+    margin: 2rem 0em 1rem;
+
+    p {
+      font-size: 0.9375rem;
+      font-weight: 400;
+      color: var(--text-gray);
+      line-height: 1.5;
+      margin-bottom: 1em;
+    }
+  }
+}
+.project-card {
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 300px;
+  h3 {
   }
 }

@@ -2,12 +2,15 @@ import "./assets/Header.css";
 import Button from "../../Componants/Button";
 import { IoMailOpenOutline } from "react-icons/io5";
 import { TbMessageCircle2 } from "react-icons/tb";
+import Pic from "../../assets/profile.webp";
 
 function Header() {
   return (
     <div className="header">
       <div className="title-div">
-        <div className="profile-photo"></div>
+        <div className="profile-photo">
+          <img src={Pic} alt="profile" />
+        </div>
         <div className="username">
           <h1>Mohamed Fiham</h1>
           <p>I'm a Web Developer based in Sri-lanka</p>
