@@ -96,8 +96,31 @@ $black-90: rgba(0, 0, 0, 0.9);
   }
 }
 
-// project card css
+// project card component
 .project-card {
   background-color: rgba(0, 0, 0, 0.1);
   aspect-ratio: 4/5;
+}
+
+// List menu component
+.list-menu {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  background-color: white;
+
+  li {
+    font-size: 0.85rem;
+    padding: 0.5em 1em;
+    border-radius: 6px;
+    transition: all 0.25s ease;
+    // background-color: rgba(0, 0, 0, 0.05);
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+  }
 }

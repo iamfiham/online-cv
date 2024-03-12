@@ -3,6 +3,8 @@ import Button from "../../Componants/Button";
 import { IoMailOpenOutline } from "react-icons/io5";
 import { TbMessageCircle2 } from "react-icons/tb";
 import Pic from "../../assets/profile.png";
+import ListMenu from "../../Componants/ListMenu";
+import { useRef, useState, useEffect } from "react";
 
 function Header() {
   const redirectToEmail = () => {
@@ -11,9 +13,32 @@ function Header() {
     window.location.href = mailtoUrl;
   };
 
+  const [menuOpen, setMenuOpen] = useState(false);
+  const menuList = useRef(null);
+  const menuButton = useRef(null);
+
+  const handleClick = () => {
+    setMenuOpen(menuOpen ? false : true);
+  };
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (!menuList.current.contains(e.target) && e.target !== menuButton.current) {
+        setMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <div className="header">
-      <div className="hamburger-icon">
+      <ListMenu positionClass={`list ${menuOpen ? "show" : ""}`} ref={menuList} clickAction={redirectToEmail} />
+      <div className="hamburger-icon" onClick={handleClick} ref={menuButton}>
         <div></div>
         <div></div>
       </div>
