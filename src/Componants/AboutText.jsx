@@ -6,21 +6,31 @@ function AboutText() {
       <h3>About me</h3>
       <div className="notes">
         <p>
-          I'm a Frontend Developer based in Srilanka, specializing in React and Next.js. I have a passion for crafting
-          exceptional user experiences and interfaces using the latest frontend technologies.My expertise lies in
-          building responsive and dynamic web applications that elevate user engagement and satisfaction.
+          I'm a versatile Frontend Developer based in Sri Lanka, specializing in React and Next.js, with a newfound
+          expertise in integrating Firebase backend services into client projects. My passion lies in crafting
+          exceptional user experiences and interfaces using the latest frontend technologies, coupled with robust
+          backend solutions.
         </p>
         <p>
-          I thrive on tackling complex challenges and turning ideas into polished digital experiences. With a strong
-          passion for design aesthetics and a commitment to writing clean, efficient code, I've had the privilege of
-          collaborating with top-tier companies in the industry.
+          My journey in frontend development has equipped me with the skills to build responsive and dynamic web
+          applications that elevate user engagement and satisfaction. I thrive on tackling complex challenges, turning
+          ideas into polished digital experiences that exceed expectations.
         </p>
         <p>
-          Apart from my professional work, I thoroughly enjoy taking on freelance projects. It's where I get to apply my
-          skills to support startups in their growth journey. Whether it's enhancing user experience or improving
-          functionality, I'm dedicated to delivering solutions that go beyond expectations. I take pride in my
-          contributions to the frontend development community and am excited to continue pushing the boundaries of
-          digital innovation.
+          In addition to my frontend skills, my ability to integrate Firebase backend services adds a new dimension to
+          my capabilities. I am proficient in incorporating Firebase Authentication for secure user authentication,
+          Firebase Realtime Database for seamless and synchronized data storage, Firebase Cloud Firestore for scalable
+          NoSQL database solutions, and Firebase Cloud Storage for efficient file storage and retrieval.
+        </p>
+        <p>
+          Throughout my career, I've had the privilege of collaborating with top-tier companies, delivering results that
+          drive success. Beyond my professional work, I actively engage in freelance projects, supporting startups in
+          their growth journey by enhancing user experiences and improving functionality.
+        </p>
+        <p>
+          As a dedicated member of the frontend development community, I take pride in pushing the boundaries of digital
+          innovation. I'm excited to continue contributing to this ever-evolving field, leveraging both frontend and
+          backend technologies, including Firebase, to create impactful solutions.
         </p>
       </div>
     </div>
