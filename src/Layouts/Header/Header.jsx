@@ -7,15 +7,20 @@ import ListMenu from "../../Componants/ListMenu";
 import { useRef, useState, useEffect } from "react";
 
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const menuList = useRef(null);
+  const menuButton = useRef(null);
+
   const redirectToEmail = () => {
     const myEmail = "xyzfiham@gmail.com";
     const mailtoUrl = `mailto:${myEmail}`;
     window.location.href = mailtoUrl;
   };
-
-  const [menuOpen, setMenuOpen] = useState(false);
-  const menuList = useRef(null);
-  const menuButton = useRef(null);
+  const redirectToWhatsapp = () => {
+    const myWhatsapp = "+94767791229";
+    const whatsappUrl = `https://wa.me/${myWhatsapp}`;
+    window.open(whatsappUrl, "_blank");
+  };
 
   const handleClick = () => {
     setMenuOpen(menuOpen ? false : true);
@@ -27,9 +32,7 @@ function Header() {
         setMenuOpen(false);
       }
     };
-
     document.addEventListener("mousedown", handleClickOutside);
-
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
@@ -62,7 +65,7 @@ function Header() {
             <IoMailOpenOutline style={{ stroke: " rgba(0, 0, 0, 0.9)" }} />
             Email
           </Button>
-          <Button>
+          <Button onClick={redirectToWhatsapp}>
             <TbMessageCircle2 style={{ stroke: "white" }} />
             Message
           </Button>
