@@ -100,6 +100,8 @@ $black-90: rgba(0, 0, 0, 0.9);
 .project-card {
   background-color: rgba(0, 0, 0, 0.1);
   aspect-ratio: 4/5;
+  opacity: 1;
+  visibility: visible;
 }
 
 // List menu component
