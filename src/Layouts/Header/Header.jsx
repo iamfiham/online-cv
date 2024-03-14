@@ -40,7 +40,11 @@ function Header() {
 
   return (
     <div className="header">
-      <ListMenu positionClass={`list ${menuOpen ? "show" : ""}`} ref={menuList} clickAction={redirectToEmail} />
+      <ListMenu
+        positionClass={`list ${menuOpen ? "show" : ""}`}
+        ref={menuList}
+        onClick={{ email: redirectToEmail, whatsapp: redirectToWhatsapp }}
+      />
       <div className="hamburger-icon" onClick={handleClick} ref={menuButton}>
         <div></div>
         <div></div>
