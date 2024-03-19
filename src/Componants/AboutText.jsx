@@ -6,10 +6,9 @@ function AboutText() {
       <h3>About me</h3>
       <div className="notes">
         <p>
-          I'm a versatile Frontend Developer based in Sri Lanka, specializing in React and Next.js, with a newfound
-          expertise in integrating Firebase backend services into client projects. My passion lies in crafting
-          exceptional user experiences and interfaces using the latest frontend technologies, coupled with robust
-          backend solutions.
+          Passionate Frontend Developer in Sri Lanka!, specializing in React and Next.js, with a newfound expertise in
+          integrating Firebase backend services into client projects. My passion lies in crafting exceptional user
+          experiences and interfaces using the latest frontend technologies, coupled with robust backend solutions.
         </p>
         <p>
           My journey in frontend development has equipped me with the skills to build responsive and dynamic web
@@ -17,15 +16,8 @@ function AboutText() {
           ideas into polished digital experiences that exceed expectations.
         </p>
         <p>
-          In addition to my frontend skills, my ability to integrate Firebase backend services adds a new dimension to
-          my capabilities. I am proficient in incorporating Firebase Authentication for secure user authentication,
-          Firebase Realtime Database for seamless and synchronized data storage, Firebase Cloud Firestore for scalable
-          NoSQL database solutions, and Firebase Cloud Storage for efficient file storage and retrieval.
-        </p>
-        <p>
-          Throughout my career, I've had the privilege of collaborating with top-tier companies, delivering results that
-          drive success. Beyond my professional work, I actively engage in freelance projects, supporting startups in
-          their growth journey by enhancing user experiences and improving functionality.
+          In addition to my front-end skills, adept at integrating Firebase backend services, including authentication,
+          real-time databases, Firestore and cloud storage ensure secure and efficient data management.
         </p>
         <p>
           As a dedicated member of the frontend development community, I take pride in pushing the boundaries of digital
