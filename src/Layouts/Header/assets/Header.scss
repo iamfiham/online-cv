@@ -23,6 +23,7 @@
     opacity: 1;
   }
   .hamburger-icon {
+    -webkit-tap-highlight-color: transparent;
     position: absolute;
     width: 45px;
     top: 1.5rem;

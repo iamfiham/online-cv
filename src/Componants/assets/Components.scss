@@ -30,6 +30,7 @@ $black-90: rgba(0, 0, 0, 0.9);
 
 .link-card {
   padding: 1rem 1rem 0.5rem;
+  -webkit-tap-highlight-color: transparent;
 
   h5 {
     font-size: 0.85rem;
@@ -113,6 +114,7 @@ $black-90: rgba(0, 0, 0, 0.9);
 // List menu component
 .list-menu {
   border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-tap-highlight-color: transparent;
   border-radius: 8px;
   padding: 0.5em;
   display: flex;
