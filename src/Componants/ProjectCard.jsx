@@ -1,14 +1,14 @@
 import "./assets/Components.scss";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect, useRef } from "react";
+import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
 
 function ProjectCard() {
   const cardRef = useRef(null);
+  gsap.registerPlugin(ScrollTrigger);
 
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-
+  useGSAP(() => {
     let tl = gsap.timeline({
       scrollTrigger: {
         trigger: cardRef.current,
@@ -22,20 +22,8 @@ function ProjectCard() {
       },
     });
 
-    tl.fromTo(cardRef.current, { y: 30, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: 1, ease: "power4.out" });
-
-    return () => {
-      // Kill the GSAP timeline
-      if (tl.current) {
-        tl.current.kill();
-      }
-      // Kill the ScrollTrigger instance
-      if (tl.scrollTrigger.current) {
-        tl.scrollTrigger.current.kill();
-      }
-    };
-  }, []);
-
+    tl.fromTo(cardRef.current, { y: 30, autoAlpha: 0 }, { y: 0, autoAlpha: 1, duration: 1, ease: "power4.out", stagger: 0.5 });
+  }, {});
   return <div className="project-card" ref={cardRef}></div>;
 }
 
