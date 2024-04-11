@@ -88,12 +88,13 @@ $black-90: rgba(0, 0, 0, 0.9);
   .notes {
     margin: 2rem 0em 1rem;
 
-    p {
+    .note {
       font-size: 0.9375rem;
       font-weight: 400;
       color: var(--text-gray);
       line-height: 1.5;
       margin-bottom: 1em;
+      clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
     }
   }
 }
