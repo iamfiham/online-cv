@@ -1,9 +1,9 @@
-import Banner from "./assets/banner.jpg";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import Banner from "../assets/banner.webp";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import "./assets/Components.scss";
+// import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export function CoverImage() {
   const coverImage = useRef(null);
@@ -23,17 +23,17 @@ export function CoverImage() {
       }
     );
   }, {});
+
   return (
     <div className="cover-image">
       <img src={Banner} alt="banner" ref={coverImage} />
       {/* <LazyLoadImage
-       src={Banner}
-       alt="banner"
-       effect="opacity"
-       delayTime={3000}
-       height="100%"
-       width="100%"
-       ref={coverImage}
+        src={Banner}
+        alt="banner"
+        effect="opacity"
+        height="100%"
+        width="100%"
+        ref={coverImage}
       /> */}
     </div>
   );

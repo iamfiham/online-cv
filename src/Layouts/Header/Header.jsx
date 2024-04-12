@@ -2,7 +2,7 @@ import "./assets/Header.scss";
 import Button from "../../Componants/Button";
 import { IoMailOpenOutline } from "react-icons/io5";
 import { TbMessageCircle2 } from "react-icons/tb";
-import Pic from "../../assets/profile.png";
+import Pic from "../../assets/profile.webp";
 import ListMenu from "../../Componants/ListMenu";
 import { useRef, useState, useEffect } from "react";
 
