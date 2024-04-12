@@ -1,26 +1,32 @@
 import "./assets/Components.scss";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { useRef } from "react";
 
 function AboutText() {
+  const notesRef = useRef(null);
+
   useGSAP(() => {
     gsap.fromTo(
-      ".note",
+      notesRef.current.children,
       {
         y: 30,
         clipPath: "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
+      },
+      {
+        y: 0,
+        clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
         duration: 1,
         ease: "power4.out",
-        stagger: 0.1,
-      },
-      { y: 0, clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", duration: 1, ease: "power4.out", stagger: 0.1 }
+        stagger: 0.15,
+      }
     );
   }, {});
 
   return (
     <div className="about-text">
       <h3>About me</h3>
-      <div className="notes">
+      <div className="notes" ref={notesRef}>
         <p className="note">
           Passionate Frontend Developer in Sri Lanka!, specializing in React and Next.js, with a newfound expertise in
           integrating Firebase backend services into client projects. My passion lies in crafting exceptional user
@@ -37,7 +43,7 @@ function AboutText() {
         </p>
         <p className="note">
           As a dedicated member of the frontend development community, I take pride in pushing the boundaries of digital
-          innovation. I'm excited to continue contributing to this ever-evolving field, leveraging both frontend and
+          innovation. I am excited to continue contributing to this ever-evolving field, leveraging both frontend and
           backend technologies, including Firebase, to create impactful solutions.
         </p>
       </div>
