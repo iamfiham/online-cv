@@ -159,6 +159,10 @@ $black-90: rgba(0, 0, 0, 0.9);
   @media (max-width: 800px) {
     height: 10rem;
   }
+  @media (max-width: 600px) {
+    border-radius: 0px;
+    margin: 0px;
+  }
   img {
     border-radius: 8px;
     object-fit: cover;
@@ -167,5 +171,9 @@ $black-90: rgba(0, 0, 0, 0.9);
     width: 100%;
     overflow: hidden;
     filter: saturate(0.5) brightness(1.5) contrast(0.8);
+
+    @media (max-width: 600px) {
+      border-radius: 0px;
+    }
   }
 }
