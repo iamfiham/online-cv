@@ -49,6 +49,10 @@ $black-90: rgba(0, 0, 0, 0.9);
     cursor: pointer;
     position: relative;
 
+    @media (max-width: 600px) {
+      font-size: 0.85rem;
+    }
+
     &::after {
       content: '';
       height: 2px;
@@ -84,6 +88,9 @@ $black-90: rgba(0, 0, 0, 0.9);
     margin-top: 0rem;
     font-weight: 700;
     color: $black-90;
+    @media (max-width: 600px) {
+      font-size: 1.1rem;
+    }
   }
   .notes {
     margin: 2rem 0em 1rem;
@@ -95,6 +102,9 @@ $black-90: rgba(0, 0, 0, 0.9);
       line-height: 1.5;
       margin-bottom: 1em;
       clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+      @media (max-width: 600px) {
+        font-size: 0.85rem;
+      }
     }
   }
 }
@@ -138,19 +148,19 @@ $black-90: rgba(0, 0, 0, 0.9);
 }
 
 .cover-image {
-  height: 14rem;
+  height: 15rem;
   // background-color: rgba(0, 0, 0, 0.05);
   overflow: hidden;
   position: relative;
-  margin: 0.75rem;
+  margin: 0.5rem;
   margin-bottom: 0px;
-  border-radius: 12px;
+  border-radius: 8px;
 
   @media (max-width: 800px) {
     height: 10rem;
   }
   img {
-    border-radius: 12px;
+    border-radius: 8px;
     object-fit: cover;
     object-position: 50% 100%;
     height: 100%;

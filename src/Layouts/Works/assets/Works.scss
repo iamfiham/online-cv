@@ -7,6 +7,9 @@ $black-90: rgba(0, 0, 0, 0.9);
     font-weight: 700;
     color: $black-90;
     letter-spacing: -0.5px;
+    @media (max-width: 600px) {
+      font-size: 1.1rem;
+    }
   }
   .project-cards {
     display: grid;
