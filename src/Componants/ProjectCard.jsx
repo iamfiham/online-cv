@@ -6,8 +6,8 @@ function ProjectCard({image, heading, subHeading, url}) {
       <div className='p-8 pb-0 flex flex-grow flex-col'>
         <h1 className='text-xl tracking-tight text-neutral-800 font-bold mb-4 leading-none'>{heading}</h1>
         <p className='text-sm text-neutral-400 mb-5'>{subHeading}</p>
-        <a href={url} target='blank' className='mt-auto'>
-          <button className='text-blue-500 gap-2 text-xs flex items-center py-1'>
+        <a href={url} target='blank' className='mt-auto self-start'>
+          <button className='text-blue-500 gap-2 text-xs flex items-center py-1 '>
             View Site <IoIosArrowRoundForward className='scale-150 fill-blue-500' />
           </button>
         </a>
