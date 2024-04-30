@@ -3,7 +3,6 @@ $black-90: rgba(0, 0, 0, 0.9);
 .works {
   h3 {
     font-size: 1.25rem;
-    margin-bottom: 2rem;
     font-weight: 700;
     color: $black-90;
     letter-spacing: -0.5px;
@@ -13,7 +12,8 @@ $black-90: rgba(0, 0, 0, 0.9);
   }
   .project-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding-block: 2rem;
     gap: 1.5rem;
   }
 }
